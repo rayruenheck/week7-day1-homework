@@ -83,7 +83,7 @@ console.log(inchesToFeet(heightsInInches))
 // // ]
 const tmnt = ["Leonardo", "Michelangelo", "Donatello", "Raphael"]
 function isEatingPizza(tmnt){
-    return tmnt.map(x => `${x} is eating pizza`)
+    return tmnt.map((x) => { return x.slice(-1)=='o' ? `${x} is eating pizza` : `${x} is being rude`} )
 }
 console.log(isEatingPizza(tmnt))
 // Question #4
@@ -103,7 +103,7 @@ console.log(findAMax.sort((a,b) => {return b-a;})[0])
 
 var bingo = "B-I-N-G-O"
 var ognib = ""
-for(let i=bingo.length-1; i>0; i--){
+for(let i=bingo.length-1; i>5; i--){
     console.log(`${ognib+=(bingo[i])} ognib = ${ognib} bingo = ${bingo} i = ${i}`)
     
 }
